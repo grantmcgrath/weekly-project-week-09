@@ -55,20 +55,20 @@ handleNotesChange(event) {
 
   render() {
     return (
-      <form onSubmit = {this.addToList} className = "" id = "">
+      <form onSubmit = {this.addToList} className = "form-group" id = "">
         <label>Username: </label>
         <input className = "form-control" onChange = {this.handleNameChange} name = "userName" placeholder = "Name or Username" value = {this.state.userName} />
 
         <label>Artist/Band: </label>
-        <input className = "form-control" onChange = {this.handleArtistChange} name = "songArtist" placeholder = "Artist or Band nName" value = {this.state.songArtist} />
+        <input className = "form-control" onChange = {this.handleArtistChange} name = "songArtist" placeholder = "Artist or Band Name" value = {this.state.songArtist} />
 
         <label>Song Title: </label>
-        <input className = "form-control" onChange = {this.handleTitleChange} name = "songTitle" placeholder = "Name or Username" value = {this.state.songTitle} />
+        <input className = "form-control" onChange = {this.handleTitleChange} name = "songTitle" placeholder = "Song Title" value = {this.state.songTitle} />
 
         <label>Notes and Song: </label>
-        <input className = "form-control" onChange = {this.handleNotesChange} name = "songNotes" value = {this.state.songNotes} />
+        <textarea rows = "3" className = "form-control" onChange = {this.handleNotesChange} name = "songNotes" value = {this.state.songNotes} />
 
-        <button className = "" type = "submit" id = "formSubmitButton">Submit</button>
+        <button className = "btn btn-primary blue" type = "submit">Submit</button>
       </form>
     );
   }

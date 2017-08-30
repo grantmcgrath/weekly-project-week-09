@@ -35,7 +35,7 @@ componentDidMount() {
   });
     return (
       <div>
-        <button onClick = {this.fetchData}>Update List</button>
+        <button onClick = {this.fetchData} className = "btn green">Update List</button>
         <div>
           {songs}
         </div>

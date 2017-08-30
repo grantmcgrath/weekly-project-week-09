@@ -5,11 +5,11 @@ const PlayListItem = (props) => {
 
 
     return (
-      <div>
-        <h5>{song.songTitle}</h5>
-        <h4>{song.songArtist}</h4>
-        <h3>{song.songNotes}</h3>
-        <h3>{song.userName}</h3>
+      <div className = "results">
+        <h5>User: <span>{song.userName}</span></h5>
+        <h5>Artist: <span>{song.songArtist}</span></h5>
+        <h5>Title: <span>{song.songTitle}</span></h5>
+        <h5>Notes: <span>{song.songNotes}</span></h5>
       </div>
     );
 }

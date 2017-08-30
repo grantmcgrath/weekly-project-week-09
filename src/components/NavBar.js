@@ -4,9 +4,7 @@ export default class NavBar extends Component {
   render() {
     return (
       <nav>
-        <h1>Music Share</h1>
-        <hr />
-        <p>Enter in your favorite songs and share your playlist with your friends!</p>
+        <h1>Play What?!</h1>
       </nav>
     );
   }
